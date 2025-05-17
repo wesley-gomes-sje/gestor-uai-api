@@ -1,0 +1,27 @@
+# Diretórios de build
+/target/
+
+# IDEs
+*.iml
+.idea/
+.classpath
+.project
+.settings/
+.idea
+# Logs
+*.log
+
+# Sistema operacional
+.DS_Store
+Thumbs.db
+
+# Arquivos de ambiente
+.env
+
+# Arquivos de configuração sensíveis
+application.properties
+application.yml
+
+# Pacotes gerados
+*.jar
+*.war
