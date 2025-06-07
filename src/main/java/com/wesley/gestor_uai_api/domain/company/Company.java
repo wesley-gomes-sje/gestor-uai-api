@@ -30,5 +30,5 @@ public class Company {
     private String city;
     private String state;
     private String country;
-    private String zipCode;
+    private String zip_code;
 }

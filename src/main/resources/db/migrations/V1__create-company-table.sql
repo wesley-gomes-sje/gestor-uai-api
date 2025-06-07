@@ -1,0 +1,17 @@
+CREATE EXTENSION IF NOT EXISTS "pgcrypto";
+
+CREATE TABLE IF NOT EXISTS companies (
+    id UUID PRIMARY KEY DEFAULT gen_random_uuid(),
+    name VARCHAR(150) NOT NULL,
+    document VARCHAR(16) NOT NULL,
+    email VARCHAR(100) NOT NULL,
+    phone VARCHAR(13) NOT NULL,
+    logo VARCHAR(100) NOT NULL,
+    address VARCHAR(200) NOT NULL,
+    city VARCHAR(80) NOT NULL,
+    state VARCHAR(30) NOT NULL,
+    country VARCHAR(25) NOT NULL,
+    zip_code VARCHAR(10) NOT NULL,
+    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+    updated_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+);
